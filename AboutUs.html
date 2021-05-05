@@ -1,0 +1,68 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/Aboutstyle.css">   
+</head>    
+    <body>
+       
+        
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                </ul>
+                
+            
+                <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+           
+        <p class="text">
+            Our Movie Recommendation System uses "Content Based " technology to make recommendations of 
+            movies that you might enjoy, and to help you avoid the ones that you won't. Based on your
+            movie ratings, Movie Recommendation System generates personalized predictions for movies
+            you haven't seen yet.  Movie Recommendation System is a unique  technology researching 
+            various aspects of personalization and filtering technologies.<span id="dots">..</span>
+            <span id="more">
+            <br> <b><u>How can this website help?</u></b>
+            <br> Content-based methods are based on the similarity of movie attributes. Using this type 
+            of recommender system, if a user watches one movie, similar movies are recommended. 
+            For example, if a user watches a comedy movie starring Adam Sandler, the system will 
+            recommend them movies in the same genre or starring the same actor, or both. 
+        
+           <br> <b><u>What can you find on this website?</u></b>
+           <br> To obtain recommendations for our users, we will predict their ratings for movies they haven’t
+           watched yet. Movies are then indexed and suggested to users based on these predicted ratings.
+           To do this, we will use past records of movies and user ratings to predict their future ratings.
+           At this point, it’s worth mentioning that in the real world, we will likely encounter new users 
+           or movieswithout a history. Such situations are called cold start problems.
+        </span></p>
+        <button type="button" id="read" onclick="read()">Read more...</button>
+        <script type="text/javascript">
+        var i=0;
+        function read(){
+            if(!i){
+                document.getElementById("more").style.display ="inline";
+                document.getElementById("dots").style.display ="none";
+                document.getElementById("read").innerHTML="Read less";
+                i=1; 
+            }
+            else{
+                document.getElementById("more").style.display ="none";
+                document.getElementById("dots").style.display ="inline";
+                document.getElementById("read").innerHTML="Read more";
+                i=0;
+            }
+        }
+        </script>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+        
+       
+    </body>
+</html>
