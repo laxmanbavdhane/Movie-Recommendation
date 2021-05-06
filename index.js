@@ -1,5 +1,5 @@
 let movie = {
-  //apiKey: "d3284db1131a025d331a538fa64820e0",
+  apiKey: "d3284db1131a025d331a538fa64820e0",
   fetchMovie: function (movie) {
     console.log(`http://localhost:5000/movie?title=${movie}`);
     fetch(`http://localhost:5000/movie?title=${movie}`, {
